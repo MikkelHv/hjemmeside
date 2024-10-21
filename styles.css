@@ -1,0 +1,120 @@
+/* Generel styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Navbar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: ghostwhite;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none; /* Fjernet punktformatering */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    color: #ff6347;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a {
+    color: #333;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6347;
+    transition: color 0.3s;
+  }
+  
+  /* Welcome section */
+  .welcome-1vw {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .welcome-text {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .scroll-down-text {
+    font-size: 1.5rem;
+    color: grey;
+  }
+  
+  /* Projects section */
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+  
+  .project {
+    margin: 20px;
+  }
+  
+  /* Footer styling */
+  footer ul {
+    list-style: none; /* Fjernet punktformatering */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: ghostwhite
+  }
+  
+  footer li {
+    margin: 0 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer a:hover {
+    color: #ff6347;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .welcome-text {
+      font-size: 2rem;
+    }
+    .scroll-down-text {
+      font-size: 1.2rem;
+    }
+    #projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
