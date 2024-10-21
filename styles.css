@@ -40,17 +40,35 @@ body {
   transition: color 0.3s;
 }
 
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: flex-end;  /* Eller 'center', hvis du vil centrere dem */
+  align-items: center;
+  gap: 15px; /* Dette sikrer ensartet afstand mellem ikonerne */
+  margin-right: 35px;
+}
+
 .social-icons a {
   color: #333;
-  margin-left: 10px;
   font-size: 20px;
   text-decoration: none;
+  display: inline-block;
+  padding: 5px; /* Giver lidt plads omkring hvert ikon */
 }
 
 .social-icons a:hover {
-  color: #ff6347;
+  color: #ff6347; /* F.eks. hover-farve */
   transition: color 0.3s;
 }
+
+i.fab {
+  width: 20px; /* Sørger for, at alle ikoner har samme bredde */
+  height: 20px;
+  text-align: center; /* Centrerer ikonet indenfor dets link */
+  line-height: 20px;
+}
+
 
 /* Welcome section */
 .welcome-1vw {
