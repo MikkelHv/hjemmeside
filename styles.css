@@ -178,3 +178,74 @@ footer a:hover {
     align-items: center;
   }
 }
+
+@media (max-width: 480px) {
+  /* Navbar */
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+    font-size: 16px; /* Mindre skrifttype til mobil */
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    font-size: 18px; /* Juster ikonerne til at være lidt mindre */
+  }
+
+  /* Welcome section */
+  .welcome-text {
+    font-size: 1.8rem; /* Mindre tekststørrelse på mobil */
+  }
+
+  .scroll-down-text {
+    font-size: 1rem;
+  }
+
+  /* Projects section */
+  #projects {
+    padding: 20px 0; /* Mindre padding til mobil */
+  }
+
+  .project {
+    width: 100%; /* Projekterne strækker sig over hele skærmbredden */
+    margin: 10px 0; /* Juster margin mellem projekter */
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 20px; /* Mindre padding for bedre plads på mobil */
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 0;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  footer li {
+    margin: 5px 0;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
