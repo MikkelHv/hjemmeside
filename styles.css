@@ -126,6 +126,15 @@ i.fab {
   }
 }
 
+/* Contact Section */
+.contact {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* Footer styling */
 footer {
   background-color: #333;
