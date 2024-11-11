@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Side</title>
+    <style>
+        /* Reset og basis styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* Container styling */
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* Link styling */
+        .link-list a {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #0066cc;
+            background-color: #e7f1fd;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .link-list a:hover {
+            background-color: #cce5ff;
+            transform: scale(1.05);
+        }
+
+        .link-list a:active {
+            background-color: #99c0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ressourcer og Links</h1>
+        <div class="link-list">
+            <a href="https://www.kaggle.com/datasets/stealthtechnologies/predict-new-york-dog-bites" target="_blank">New York Dog Bites Dataset</a>
+            <a href="https://www.statistikbanken.dk/statbank5a/default.asp?w=1440" target="_blank">Statistikbanken</a>
+            <a href="https://ourworldindata.org/human-rights" target="_blank">Our World in Data - Human Rights</a>
+        </div>
+    </div>
+</body>
+</html>
