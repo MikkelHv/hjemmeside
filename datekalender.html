@@ -3,89 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yearly Date Calendar</title>
-    <link rel="stylesheet" href="stylesDateKalender.css">
+    <title>2025 Date Kalender</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
 
-    <h1 class="calendar-title">2024 Date Kalender</h1>
+    <h1 class="calendar-title">2025 Date Kalender</h1>
 
-    <p class="centered-text">Dette er en kalender til os, med en planlagt date for hver måned. Jeg håber, du er klar til et år fyldt med sjove stunder, Anna!</p>
+    <p class="centered-text">Dette er en kalender til os, med en planlagt date for hver måned. Jeg håber, du er klar til endnu et fantastisk år sammen, Anna!</p>
+    <br>
+    <div id="countdown" class="centered-text"></div>
 
     <div class="calendar">
-        <!-- Januar i -->
-        <div class="month january">
+        <!-- Januar -->
+        <div class="month january hidden">
             <h2>Januar</h2>
-            <h3>Badminton</h3>
-            <p>Planen er, at vi tager til Hammel, hvor jeg er vokset op, og spiller badminton i Hammel Hallen.</p>
+            <h3>Svømmehal</h3>
+            <p>Vi tager til Lyseng og nyder en tur i svømmehallen.</p>
         </div>
         <!-- Februar -->
-        <div class="month february">
+        <div class="month february hidden">
             <h2>Februar</h2>
-            <h3>Randers Regnskov</h3>
-            <p>Et besøg i den varme regnskov kan helt sikkert varme os op i den kolde tid.</p>
+            <h3>Badminton</h3>
+            <p>Vi spiller en sjov omgang badminton sammen i DGI-huset.</p>
         </div>
         <!-- Marts -->
-        <div class="month march">
+        <div class="month march hidden">
             <h2>Marts</h2>
-            <h3>Male Keramik</h3>
-            <p>Vi skal male det flotteste keramik hos 'Creative Space'.</p>
+            <h3>Aros Kunstmuseum</h3>
+            <p>Vi udforsker kunst og kultur på Aros Kunstmuseum.</p>
         </div>
         <!-- April -->
-        <div class="month april">
+        <div class="month april hidden">
             <h2>April</h2>
-            <h3>Genbrugsdate</h3>
-            <p>Vi tager på dagsudflugt til nogle af de fantastiske genbrugsbutikker på Djursland. Der er virkelig meget glemt guld derude.</p>
+            <h3>Cykeltur langs kysten</h3>
+            <p>Vi pakker en picnic og tager cyklerne ud langs den smukke kystlinje.</p>
+            <p>Plus, vi skal også noget rigtig sjovt</p>
         </div>
         <!-- Maj -->
-        <div class="month may">
+        <div class="month may hidden">
             <h2>Maj</h2>
-            <h3>Bål på Stranden</h3>
-            <p>Med lidt vin, noget lækkert at spise og mulighed for en forfriskende dukkert, hvis lysten melder sig</p>
+            <h3>Bål på stranden</h3>
+            <p>Vi nyder en aften ved stranden med bål, vin og hygge.</p>
         </div>
         <!-- Juni -->
-        <div class="month june">
+        <div class="month june hidden">
             <h2>Juni</h2>
-            <h3>Sove i Shelter</h3>
-            <p>Vi skal tilbringe natten i en hyggelig shelter, omgivet af naturens lyde og se på stjernerne.</p>
+            <h3>Sove i shelter</h3>
+            <p>Vi overnatter i en hyggelig shelter under stjernerne.</p>
         </div>
         <!-- Juli -->
-        <div class="month july">
+        <div class="month july hidden">
             <h2>Juli</h2>
-            <h3>Tur til Himmelbjerget</h3>
-            <p>Vi skal på en hyggelig gåtur sammen og nyde den betagende udsigt fra Himmelbjerget.</p>
+            <h3>Fisketur</h3>
+            <p>Vi tager hen til mit hemmelige spot, og fanger aftensmaden</p>
         </div>
         <!-- August -->
-        <div class="month august">
+        <div class="month august hidden">
             <h2>August</h2>
-            <h3>Fiske tur</h3>
-            <p>Vi skal ud og fange vores aftensmad ved kysten.</p>
+            <h3>Street Food</h3>
+            <p>Vi tager ned på street food og smager på alt det lækre de har.</p>
         </div>
         <!-- September -->
-        <div class="month september">
+        <div class="month september hidden">
             <h2>September</h2>
-            <h3>Sommerhus tur</h3>
-            <p>Den står på sensommerhygge i sommerhuset ved Ebeltoft</p>
+            <h3>Film i Botanisk Have</h3>
+            <p>Vi ser en udendørs film i den smukke Botanisk Have.</p>
         </div>
         <!-- Oktober -->
-        <div class="month october">
+        <div class="month october hidden">
             <h2>Oktober</h2>
-            <h3>Mesterskabet i græskarudskæring.</h3>
-            <p>Der er revanche fra vores seneste græskarudskæring. Taberen skal give vinderen en lækker massage.</p>
+            <h3>Græskar Udskæring</h3>
+            <p>Græskar udskæringskonkurrence, taberen skal give vinderen en lækker massage.</p>
         </div>
         <!-- November -->
-        <div class="month november">
+        <div class="month november hidden">
             <h2>November</h2>
-            <h3>Aros Kunstmuseum</h3>
-            <p>Lad os tage ind og udforske kunst sammen.</p>
+            <h3>Grosserbadet Spanien</h3>
+            <p>Vi slapper af og nyder atmosfæren på Grosserbadet.</p>
         </div>
         <!-- December -->
-        <div class="month december">
+        <div class="month december hidden">
             <h2>December</h2>
-            <h3>Biograf tur</h3>
-            <p>Vi skal ind og se film på det store lærred.</p>
+            <h3>Jule bagning hos min mor</h3>
+            <p>Vi bager vaniljekranse og brunkager hos min mor og nyder julestemningen.</p>
         </div>
     </div>
+
+    <script>
+        // Hover-effekt
+        document.querySelectorAll('.month').forEach(month => {
+            month.addEventListener('mouseover', () => {
+                month.style.transform = 'scale(1.1)';
+            });
+            month.addEventListener('mouseout', () => {
+                month.style.transform = 'scale(1.0)';
+            });
+        });
+
+        // Scroll-animation
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.hidden').forEach(el => observer.observe(el)); 
+
+        // Array med datoer for hver date
+        const dateArray = [
+            new Date('2025-01-08'), //Svømmehal
+            new Date('2025-02-09'), //Badminton
+            new Date('2025-03-18'), //Aros Kunstmuseum
+            new Date('2025-04-26'), //Cykeltur langs kysten
+            new Date('2025-05-17'), //Bål på stranden
+            new Date('2025-06-14'), //Sove i shelter
+            new Date('2025-07-10'), //Fiske turen
+            new Date('2025-08-21'), //Street Food
+            new Date('2025-09-05'), //Film i Botanisk Have
+            new Date('2025-10-12'), // Græskar Udskæring
+            new Date('2025-11-07'), //Grosserbadet Spanien
+            new Date('2025-12-07') //Jule bagning hos min mor
+        ];
+
+        function updateCountdown() {
+            const now = new Date();
+            let nextDate = null;
+            let days = null;
+
+            for (const date of dateArray) {
+                if (date > now) {
+                    nextDate = date;
+                    days = Math.ceil((nextDate - now) / (1000 * 60 * 60 * 24));
+                    break;
+                }
+            }
+
+            if (nextDate) {
+                document.getElementById('countdown').textContent = `Der er ${days} dage til næste date!`;
+            } else {
+                document.getElementById('countdown').textContent = "Alle dates for året er gennemført!";
+            }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 86400000); // Opdater hver dag
+    </script>
 
 </body>
 </html>
