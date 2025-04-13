@@ -6,70 +6,6 @@
     <title>About Me - Mikkel Hvedegaard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .about-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        .about-section {
-            margin-bottom: 3rem;
-        }
-        
-        .about-section h2 {
-            margin-bottom: 1.5rem;
-            color: #2c3e50;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        
-        .about-section h2::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background-color: #3498db;
-        }
-        
-        .about-section p {
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-        
-        .about-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .about-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .interests-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .interest-item {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        .interest-icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: #3498db;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -100,6 +36,42 @@
             <div class="about-header">
                 <h1>About Me</h1>
                 <p>Hi, I'm Mikkel.</p>
+            </div>
+            
+            <!-- New profile section with image and bio details -->
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <!-- Uncomment and update path when you have an image ready -->
+                    <img src="projects/pictures/20240930_155725.jpg" alt="Mikkel Hvedegaard" class="profile-image">
+                </div>
+                
+                <div class="profile-details">
+                    <p>
+                        I'm an IT Architecture student with a background in entrepreneurship, a passion for systems, and a deep interest in personal growth. I believe in using tech to create a better life and books, movement, and nature to stay grounded.
+                    </p>
+                    
+                    <div class="bio-details">
+                        <div class="bio-item">
+                            <span class="bio-icon"><i class="fas fa-birthday-cake"></i></span>
+                            <span class="bio-text">27 years old</span> <!-- Replace with your actual age -->
+                        </div>
+                        
+                        <div class="bio-item">
+                            <span class="bio-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="bio-text">Aarhus, Denmark</span> <!-- Replace with your actual city/country -->
+                        </div>
+                        
+                        <div class="bio-item">
+                            <span class="bio-icon"><i class="fas fa-graduation-cap"></i></span>
+                            <span class="bio-text">IT Architecture @ Erhvervsakademi Aarhus</span>
+                        </div>
+                        
+                        <div class="bio-item">
+                            <span class="bio-icon"><i class="fas fa-briefcase"></i></span>
+                            <span class="bio-text">Intern @ Vestas</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="about-section">
