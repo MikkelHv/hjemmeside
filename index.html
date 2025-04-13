@@ -3,27 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="freeCodeCamp Build a Personal Portfolio Webpage" />
-    <title>Mikkels Portfolio</title>
-    <!-- Font Awesome for social media icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <meta name="description" content="Mikkel Hvedegaard - IT Architecture, Books, and Personal Projects" />
+    <title>Mikkel Hvedegaard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="welcome-section">
       <nav id="navbar">
         <ul class="nav-links">
+          <li><a class="nav-link" href="/about.html">About</a></li>
+          <li><a class="nav-link" href="#book-recommendations">Book Recommendations</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#contact-section">Contact</a></li>
-          <li><a class="nav-link" href="#about-section">About</a></li>
         </ul>
         <div class="social-icons">
-          <!--<a href="https://www.facebook.com/mikkel.hvedegaard" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a> -->
           <a href="https://github.com/MikkelHv" target="_blank">
             <i class="fab fa-github"></i>
           </a>
@@ -35,150 +29,184 @@
           </a>
         </div>
       </nav>
-      <div class="welcome-1vw">
-        <h1 class="welcome-text">Welcome to my site</h1>
-        <p class="scroll-down-text">Work in Progress...</p>
+      <div class="hero-content">
+        <h1 class="welcome-text">Mikkel Hvedegaard</h1>
+        <p>
+          I’m an IT Architecture student with a background in entrepreneurship, a passion for systems, and a deep interest in personal growth. I believe in using tech to create a better life — and books, movement, and nature to stay grounded.  
+          <a href="/about.html" class="about-link">More about me →</a>
+        </p>
       </div>
     </header>
-    <main>
-      <section id="projects">
-        <div class="project 1">
-          <h3 class="project-tile">Project 1</h3>
-          <img
-            src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
-            alt="freecodecamp logo"
-            loading="lazy"
-            width="400px"
-            height="400px"
-          />
-          <p class="project-paragraf">**short description of project<a>link to pop-up</a>**</p>
-        </div>
-        <div class="project 2">
-          <h3 class="project-title">Project 2</h3>
-          <img
-            src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
-            alt="freecodecamp logo"
-            loading="lazy"
-            width="400px"
-            height="400px"
-          />
-          <p class="project-paragraf">**short description of project**</p>
-        </div>
-        <div class="project 3">
-          <h3 class="project-title">Project 3</h3>
-          <img
-            src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
-            alt="freecodecamp logo"
-            loading="lazy"
-            width="400px"
-            height="400px"
-          />
-          <p class="project-paragraf">**short description of project**</p>
-        </div>
-      </section>
-      <br>
-      <br>
-      <br>
-      <section id="contact-section">
-        <h3 class="contact-title">Get in touch</h3>
-        <p class="contact-text name"></p>
-        <p class="contact-text email"> Send me a message on one of the social channels in the top right corner</p>
-        <p class="contact-text country"></p>
-        <div class="contact">
-          <div class="badge-base LI-profile-badge" data-locale="da_DK" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="mikkel-hvedegaard-205512178" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://dk.linkedin.com/in/mikkel-hvedegaard-205512178?trk=profile-badge"></a></div>
-          <img
-              src="responsive-web-design-certificate.png"
-              alt="freecodecamp Responsive Web Design Certificate"
-              href="https://www.freecodecamp.org/fccd3e2ff12-5ea8-430d-a112-c963295305d4"
-              loading="lazy"
-              width="600px"
-              height="400px"
-          />
-        </div>
-      </section>
     
-      <!--
-      <section id="about-section">
-        <h3 class="about-title">About Me</h3>
-        <h4 class="about-text name">Mikkel Hvedegaard</h4>
-        <p class="about-text first">I am an IT-Architecture student at Erhvervsakademi Aarhus with a strong focus on Enterprise Architecture, system development, cloud computing, and ERP solutions. My passion for technology is complemented by practical experience from running my own business, where I developed skills in project management, customer relations, and operational efficiency.
-          <br><br>
-          Currently, I am seeking an internship within Enterprise Architecture or related fields, starting from January 13, 2025, where I can apply my knowledge and continue to grow in a dynamic environment. I am particularly interested in how organizations structure their IT ecosystems to support long-term business strategies.
-          <br><br>
-          With a hands-on mindset, I thrive on solving complex challenges and continuously expanding my skill set. I am excited to connect with professionals in the IT industry and explore opportunities in Enterprise Architecture, system development, IT strategy, and cloud solutions.
-          <br><br>
-          If you are looking for a motivated intern who is eager to learn and contribute to impactful projects, I would love to hear from you!</p>
-        <p class="about-text second"></p>
-        <p class="about-text third"></p>
-      </section>
-      -->
+    <main>
+      <!-- <section id="about-section">
+        <div class="section-container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>I am an IT-Architecture student at Erhvervsakademi Aarhus with a strong focus on Enterprise Architecture, system development, cloud computing, and ERP solutions. My passion for technology is complemented by practical experience from running my own business, where I developed skills in project management, customer relations, and operational efficiency.</p>
+              
+              <p>Currently, I am have an internship at Vestas, where I focus on IT Architecture</p>
+              
+              <p>With a hands-on mindset, I thrive on solving complex challenges and continuously expanding my skill set. Beyond technical work, I'm an avid reader who uses books to gain insights into personal development and various topics.</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
       <section id="book-recommendations">
-        <h3 class="section-title">Book Recommendations</h3>
-        <p class="section-description">A collection of books that have shaped my thinking and might interest you too.</p>
-        
-        <div class="book-grid">
-          <!-- Book 1 -->
-          <div class="book-card">
-            <div class="book-content">
-              <a href="book-essays/book1.html" class="book-card-link">
-                <div class="book-image">
-                  <img src="https://m.media-amazon.com/images/I/81MtKRJ1HLL._SY466_.jpg" alt="Book Title 1" loading="lazy">
-                </div>
-                <div class="book-info">
-                  <h4 class="book-title">Can't Hurt Me by David Goggins</h4>
-                  <p class="book-summary">This book sparked a fire in me in a dark time, and helped me take the first steps on my way out of hell.</p>
-                </div>
-              </a>
-              <a href="https://amzn.to/3RCCj0T" class="amazon-link" target="_blank" rel="nofollow">Buy on Amazon (affiliate link)</a>
+        <div class="section-container">
+          <h2 class="section-title">Book Recommendations</h2>
+          <p class="section-description">A collection of books that have shaped my thinking and might interest you too.</p>
+          
+          <div class="book-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+              <div class="book-content">
+                <a href="book-essays/book1.html" class="book-card-link">
+                  <div class="book-image">
+                    <img src="https://m.media-amazon.com/images/I/81MtKRJ1HLL._SY466_.jpg" alt="Can't Hurt Me by David Goggins" loading="lazy">
+                  </div>
+                  <div class="book-info">
+                    <h4 class="book-title">Can't Hurt Me by David Goggins</h4>
+                    <p class="book-summary">This book sparked a fire in me in a dark time, and helped me take the first steps on my way out of hell.</p>
+                  </div>
+                </a>
+                <a href="https://amzn.to/3RCCj0T" class="amazon-link" target="_blank" rel="nofollow">Buy on Amazon (affiliate link)</a>
+              </div>
+            </div>
+            
+            <!-- Book 2 -->
+            <div class="book-card">
+              <div class="book-content">
+                <a href="book-essays/book2.html" class="book-card-link">
+                  <div class="book-image">
+                    <img src="https://m.media-amazon.com/images/I/71wSz6VVk6L._SY466_.jpg" alt="Meditations of Marcus Aurelius" loading="lazy">
+                  </div>
+                  <div class="book-info">
+                    <h4 class="book-title">Meditations of Marcus Aurelius</h4>
+                    <p class="book-summary">Reading in this book of meditations, thoughts of an original stoic, little by little it helps keep your ego in check.</p>
+                  </div>
+                </a>
+                <a href="https://amzn.to/42zDOmL" class="amazon-link" target="_blank" rel="nofollow">Buy on Amazon (affiliate link)</a>
+              </div>
+            </div>
+            
+            <!-- Book 3 -->
+            <div class="book-card">
+              <div class="book-content">
+                <a href="book-essays/book3.html" class="book-card-link">
+                  <div class="book-image">
+                    <img src="https://m.media-amazon.com/images/I/71OPafHmyQL._SY466_.jpg" alt="The Hitchhiker's Guide to the Galaxy" loading="lazy">
+                  </div>
+                  <div class="book-info">
+                    <h4 class="book-title">The Hitchhiker's Guide to the Galaxy</h4>
+                    <p class="book-summary">This weird book is a must read, a fun break and maybe it makes you wonder for a while about your life.</p>
+                  </div>
+                </a>
+                <a href="https://amzn.to/3XO2q8P" class="amazon-link" target="_blank" rel="nofollow">Buy on Amazon (affiliate link)</a>
+              </div>
             </div>
           </div>
           
-          <!-- Book 2 -->
-          <div class="book-card">
-            <div class="book-content">
-              <a href="book-essays/book2.html" class="book-card-link">
-                <div class="book-image">
-                  <img src="https://m.media-amazon.com/images/I/71wSz6VVk6L._SY466_.jpg" alt="Book Title 2" loading="lazy">
+          <div class="section-cta">
+            <a href="book-essays/books.html" class="view-all-link">View All Book Recommendations →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-container">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-description">A selection of my work and ongoing projects.</p>
+          
+          <div class="project-grid">
+            <!-- Technical Project -->
+            <div class="project-card">
+              <a href="projects/project1.html" class="project-card-link">
+                <div class="project-image">
+                  <img src="placeholder-project.jpg" alt="Meal Planner" loading="lazy">
                 </div>
-                <div class="book-info">
-                  <h4 class="book-title">Meditations of Marcus Aurelius</h4>
-                  <p class="book-summary">Reading in this book of meditations, thoughts of an original stoic, little by little it helps keep your ego in check.</p>
+                <div class="project-info">
+                  <div class="project-category">Code 4 Fun</div>
+                  <h3 class="project-title">Meal Planner from grocery store offers</h3>
+                  <p class="project-summary">Making it easy and money saving to plan the meals for an entire week</p>
+                  <span class="project-link">View Project →</span>
                 </div>
               </a>
-              <a href="https://amzn.to/42zDOmL" class="amazon-link" target="_blank" rel="nofollow">Buy on Amazon (affiliate link)</a>
+            </div>
+            
+            <!-- Academic Project -->
+            <div class="project-card">
+              <a href="projects/academic1.html" class="project-card-link">
+                <div class="project-image">
+                  <img src="/projects/pictures/Academic/auctionSystem/Skærmbillede 2024-12-19 131044.png" alt="ERP System Implementation Analysis" loading="lazy">
+                </div>
+                <div class="project-info">
+                  <div class="project-category">Academic</div>
+                  <h3 class="project-title">Functioning Auction system with microservice architecture </h3>
+                  <p class="project-summary">A school project making a functioning Auction system, with microservice architecture utilizing docker</p>
+                  <span class="project-link">View Project →</span>
+                </div>
+              </a>
+            </div>
+            
+            <!-- Non-Technical Project -->
+            <div class="project-card">
+              <a href="projects/non-tech/kombucha.html" class="project-card-link">
+                <div class="project-image">
+                  <img src="/projects/pictures/kombucha/Messenger_creation_C946FA23-3EAD-4152-B593-B32C7678F45D.png" alt="Kombucha Brewing" loading="lazy">
+                </div>
+                <div class="project-info">
+                  <div class="project-category">Personal</div>
+                  <h3 class="project-title">Home Kombucha Brewing</h3>
+                  <p class="project-summary">Experimenting with home fermentation, flavor combinations, and brewing techniques for kombucha.</p>
+                  <span class="project-link">View Project →</span>
+                </div>
+              </a>
             </div>
           </div>
           
-          <!-- Book 3 -->
-          <div class="book-card">
-            <div class="book-content">
-              <a href="book-essays/book3.html" class="book-card-link">
-                <div class="book-image">
-                  <img src="https://m.media-amazon.com/images/I/71OPafHmyQL._SY466_.jpg" alt="The Hitchhiker's Guide to the Galaxy" loading="lazy">
-                </div>
-                <div class="book-info">
-                  <h4 class="book-title">The Hitchhiker's Guide to the Galaxy</h4>
-                  <p class="book-summary">This weird book is a must read, a fun break and maybe it makes you wonder for a while about your life.</p>
-                </div>
-              </a>
-              <a href="https://amzn.to/3XO2q8P" class="amazon-link" target="_blank" rel="nofollow">Buy on Amazon (affiliate link)</a>
+          <div class="section-cta">
+            <a href="projects/projects.html" class="view-all-link">View All Projects →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section">
+        <div class="section-container">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="contact-text">Feel free to reach out for collaborations, questions about my book recommendations, or opportunities.</p>
+          
+          <div class="contact-content">
+            <div class="linkedin-badge">
+              <div class="badge-base LI-profile-badge" data-locale="da_DK" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="mikkel-hvedegaard-205512178" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://dk.linkedin.com/in/mikkel-hvedegaard-205512178?trk=profile-badge"></a>
+              </div>
+            </div>
+            
+            <div class="contact-info">
+              <p>Send me a message on one of the social channels above or connect with me on LinkedIn.</p>
             </div>
           </div>
-          
-          <!-- Add 6 more book cards to complete 3 rows of 3 books -->
-          <!-- Books 4-9 with the same structure -->
         </div>
       </section>
     </main>
+    
     <footer>
-      <ul class="footer-li">
-        <li><a href="#welcome-section">To the top</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-        <li><a href="#about-section">About Me</a></li>
-      </ul>
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="#welcome-section">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="#book-recommendations">Books</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+        
+        <p class="copyright">© 2025 Mikkel Hvedegaard</p>
+      </div>
     </footer>
+    
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   </body>
 </html>
