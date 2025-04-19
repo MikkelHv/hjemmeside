@@ -153,20 +153,17 @@
             <div class="project-section">
                 <h2 class="project-section-title">Gallery</h2>
                 <div class="project-gallery">
-                    <div class="gallery-item">
-                        <img src="../../placeholder-project.jpg" alt="Brewing container with SCOBY">
+                    <div class="gallery-item" onclick="openLightbox('/projects/pictures/kombucha/20250330_150302.jpg', 'Kombucha brewing setup')">
+                        <img src="/projects/pictures/kombucha/20250330_150302.jpg" alt="Brewing container with SCOBY">
                     </div>
-                    <div class="gallery-item">
-                        <img src="../../placeholder-project.jpg" alt="Bottled kombucha">
+                    <div class="gallery-item" onclick="openLightbox('/projects/pictures/kombucha/Messenger_creation_C946FA23-3EAD-4152-B593-B32C7678F45D.png', 'Bottled kombucha')">
+                        <img src="/projects/pictures/kombucha/Messenger_creation_C946FA23-3EAD-4152-B593-B32C7678F45D.png" alt="Bottled kombucha">
                     </div>
-                    <div class="gallery-item">
-                        <img src="../../placeholder-project.jpg" alt="Raspberry kombucha">
+                    <div class="gallery-item" onclick="openLightbox('/projects/pictures/kombucha/20250409_072247.jpg', 'Fermenting kombucha')">
+                        <img src="/projects/pictures/kombucha/20250409_072247.jpg" alt="Fermenting kombucha">
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" onclick="openLightbox('/projects/pictures/kombucha/1000008264 (1).jpg', 'Strawberry kombucha')">
                         <img src="/projects/pictures/kombucha/1000008264 (1).jpg" alt="Strawberry kombucha">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/projects/pictures/kombucha/20250409_072247.jpg" alt="Pineapple kombucha">
                     </div>
                 </div>
                 <p style="text-align: center; margin-top: 1rem; font-style: italic;">Images will be added as the project progresses.</p>
@@ -210,5 +207,52 @@
             <p class="copyright">© 2025 Mikkel Hvedegaard</p>
         </div>
     </footer>
+    
+    <!-- Lightbox for image viewing -->
+    <div class="lightbox" id="image-lightbox">
+        <button class="close-lightbox" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-image" src="" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    
+    <script>
+        function openLightbox(imageSrc, caption) {
+            const lightbox = document.getElementById('image-lightbox');
+            const lightboxImg = document.getElementById('lightbox-image');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            
+            // Set the image source and caption
+            lightboxImg.src = imageSrc;
+            lightboxCaption.textContent = caption;
+            
+            // Display the lightbox
+            lightbox.classList.add('active');
+            
+            // Prevent scrolling on the body
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('image-lightbox');
+            lightbox.classList.remove('active');
+            
+            // Re-enable scrolling on the body
+            document.body.style.overflow = '';
+        }
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById('image-lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+        
+        // Close lightbox with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('image-lightbox').classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
