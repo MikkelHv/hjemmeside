@@ -1,0 +1,2 @@
+- @azure Rule - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available.
+- @nextjs Rule - Use Official Documentation: When generating code related to Next.js, always refer to and follow the official Next.js documentation from https://nextjs.org/docs to ensure best practices and up-to-date implementation patterns.
