@@ -38,10 +38,9 @@ export default function About() {
             But tech is only half the picture. I believe in using technology to build a better life, 
             but I also value the raw, the real, and the natural. Being offline, being outdoors, being present.
           </p>
-          <p className="leading-relaxed">
-            After losing my father, I turned to books, not for escape, but for clarity. Writers like 
+          <p className="leading-relaxed">            After losing my father, I turned to books, not for escape, but for clarity. Writers like 
             David Goggins and Jordan B. Peterson helped me reframe how I see adversity, identity, and ambition. 
-            I believe suffering is part of life, and while you can't avoid it, you can keep moving forward 
+            I believe suffering is part of life, and while you can&apos;t avoid it, you can keep moving forward 
             toward the light at the end of the tunnel.
           </p>
         </div>
@@ -62,9 +61,8 @@ export default function About() {
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-primary w-max">
           Interests & Activities
         </h2>
-        <div className="text-gray-700 dark:text-gray-300">
-          <p className="leading-relaxed mb-8">
-            Eventually I'll also be writing about fitness, walking 100km's, brewing kombucha, 
+        <div className="text-gray-700 dark:text-gray-300">          <p className="leading-relaxed mb-8">
+            Eventually I&apos;ll also be writing about fitness, walking 100km&apos;s, brewing kombucha, 
             experimenting with side hustles, and reflecting on life in general. Playing football 
             (Serie 5 — the lowest tier in Denmark) with the boys is something that helps too. 
             That sense of community, frustration release, and movement matters more than people think.

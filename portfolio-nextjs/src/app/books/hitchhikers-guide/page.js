@@ -36,8 +36,7 @@ export default function HitchhikersGuideBook() {
           </div>
         </div>
         
-        <div className="w-full md:w-2/3">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">The Hitchhiker's Guide to the Galaxy</h1>
+        <div className="w-full md:w-2/3">          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">The Hitchhiker&apos;s Guide to the Galaxy</h1>
           <p className="text-xl text-gray-700 dark:text-gray-300 mb-4">by Douglas Adams</p>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
             This weird book is a must read, a fun break and maybe it makes you wonder for a while about your life.
@@ -85,9 +84,8 @@ export default function HitchhikersGuideBook() {
         </p>
       </div>
       
-      <div className="mt-12 text-center">
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
-          If you're interested in exploring these ideas further, consider purchasing the book:
+      <div className="mt-12 text-center">        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          If you&apos;re interested in exploring these ideas further, consider purchasing the book:
         </p>
         <a 
           href="https://amzn.to/3XO2q8P" 

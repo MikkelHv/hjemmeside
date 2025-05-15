@@ -36,8 +36,7 @@ export default function CantHurtMeBook() {
           </div>
         </div>
         
-        <div className="w-full md:w-2/3">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">Can't Hurt Me</h1>
+        <div className="w-full md:w-2/3">          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">Can&apos;t Hurt Me</h1>
           <p className="text-xl text-gray-700 dark:text-gray-300 mb-4">by David Goggins</p>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
             This book sparked a fire in me in a dark time, and helped me take the first steps on my way out of hell.
@@ -85,9 +84,8 @@ export default function CantHurtMeBook() {
         </p>
       </div>
       
-      <div className="mt-12 text-center">
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
-          If you're interested in exploring these ideas further, consider purchasing the book:
+      <div className="mt-12 text-center">        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          If you&apos;re interested in exploring these ideas further, consider purchasing the book:
         </p>
         <a 
           href="https://amzn.to/3RCCj0T" 
